@@ -17,6 +17,8 @@ services:
 
   db:
     image: postgres:13
+#     Store logs file in odoo-db-data/log.
+#     command: "-c logging_collector=on"
     environment:
       - POSTGRES_DB=${POSTGRES_DB}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
